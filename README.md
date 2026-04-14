@@ -1,72 +1,62 @@
-# Cost Per Mile Calculator
+<div align="center">
 
-A fast, beautiful cost-per-mile calculator for road-trippers and owner-operators. Live results, dark mode, mobile-first, runs fully in the browser.
+# ⛽ Cost Per Mile
 
-**Live demo →** https://vardst.github.io/calculator_oil/
+### Know exactly what every mile costs you.
 
-## Features
+A beautiful, lightning-fast cost-per-mile calculator for road-trippers and owner-operators.
+Live results · dark mode · mobile-first · zero tracking.
 
-- **Two modes**
-  - **Trip · Simple** — distance, MPG, fuel price, vehicle type, payload, driving conditions, A/C, passengers (split cost), round-trip, EV path with kWh inputs.
-  - **Trucking · Pro** — fixed monthly costs, variable per-mile costs, labor, deadhead %, profit target → break-even rate & suggested rate per mile.
-- **Live calculation** as you type, with animated number tweens.
-- **Cost breakdown** bar showing where every dollar goes.
-- **Unit toggle** (mi/gal ↔ km/L) and currency selector ($ / € / £).
-- **Dark mode by default**, light mode toggle, respects `prefers-reduced-motion`.
-- **Mobile-first responsive** layout — single column on phones, sticky results pane on desktop.
-- **Persists** all inputs, mode, theme, and units to `localStorage`.
-- **Copy results** to clipboard for sharing.
-- **Zero backend** — all calculations run locally, no data leaves your device.
+<br />
 
-## Tech stack
+[![Live Demo](https://img.shields.io/badge/▶_Try_it_live-vardst.github.io%2Fcalculator__oil-fbbf24?style=for-the-badge&labelColor=0a0a0a)](https://vardst.github.io/calculator_oil/)
 
-- Vite + React 18 + TypeScript
-- Tailwind CSS v4
-- Radix UI primitives (Tabs, Tooltip, Switch, Collapsible)
-- `motion` for animations
-- `lucide-react` for icons
+<br />
 
-## Getting started
+[![Deploy](https://img.shields.io/github/actions/workflow/status/vardst/calculator_oil/deploy.yml?branch=main&label=deploy&style=flat-square&logo=githubactions&logoColor=white&color=34d399&labelColor=0a0a0a)](https://github.com/vardst/calculator_oil/actions/workflows/deploy.yml)
+[![GitHub Pages](https://img.shields.io/badge/hosted%20on-GitHub%20Pages-181717?style=flat-square&logo=github&logoColor=white)](https://vardst.github.io/calculator_oil/)
+[![Built with Vite](https://img.shields.io/badge/built%20with-Vite-646cff?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev)
+[![React](https://img.shields.io/badge/React-18-61dafb?style=flat-square&logo=react&logoColor=white)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Tailwind v4](https://img.shields.io/badge/Tailwind-v4-06b6d4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![License: MIT](https://img.shields.io/badge/license-MIT-fbbf24?style=flat-square&labelColor=0a0a0a)](#license)
 
-```bash
-npm install
-npm run dev      # http://localhost:5173
-npm run build    # production bundle in dist/
-npm run preview  # serve the production build locally
-```
+</div>
 
-## Deployment
+<br />
 
-Deploys to GitHub Pages automatically on push to `main` via [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). To enable for a fresh repo:
+<div align="center">
 
-1. Push the repo to GitHub.
-2. **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-3. Push to `main` — the workflow builds and publishes `dist/`.
+## ✨
 
-`vite.config.ts` uses `base: './'` so the bundle works at any sub-path (no edits needed if you rename the repo or fork it).
+| 🚗 **Trip mode** | 🚛 **Trucking pro** | ⚡ **Live** |
+|:---:|:---:|:---:|
+| Plan road trips,<br/>split with friends | Break-even &<br/>suggested rate per mile | Numbers update<br/>as you type |
 
-## Project structure
+| 🌙 **Dark by default** | 🌍 **Metric or imperial** | 💸 **$ · € · £** |
+|:---:|:---:|:---:|
+| Easy on the eyes,<br/>light mode included | One toggle,<br/>everything converts | Pick your<br/>currency |
 
-```
-src/
-├── App.tsx                   # tabs, theme/unit/currency toggles, layout
-├── components/
-│   ├── SimpleCalculator.tsx
-│   ├── ProCalculator.tsx
-│   ├── ResultsCard.tsx       # animated stats + breakdown
-│   ├── CostBreakdownChart.tsx
-│   ├── NumberInput.tsx
-│   ├── ThemeToggle.tsx
-│   ├── UnitToggle.tsx
-│   └── ui/                   # Button, Card, Input, Tabs, Switch, Tooltip, Collapsible
-├── lib/
-│   ├── calc.ts               # pure calcSimple / calcPro
-│   ├── units.ts              # mi↔km, gal↔L, MPG↔L/100km
-│   ├── storage.ts            # useLocalStorage hook
-│   └── utils.ts              # cn() helper
-└── types.ts
-```
+| 📱 **Mobile-first** | 🔒 **100% private** | 📋 **One-tap copy** |
+|:---:|:---:|:---:|
+| Designed for the<br/>phone in your pocket | All math runs locally,<br/>nothing leaves your device | Share results<br/>in a tap |
 
-## License
+</div>
 
-MIT
+<br />
+
+<div align="center">
+
+### 👉 [**Open the calculator**](https://vardst.github.io/calculator_oil/) 👈
+
+<sub>Free forever · No signup · Works offline after first load</sub>
+
+</div>
+
+<br />
+
+---
+
+<div align="center">
+<sub>Made with ⛽ and ☕ · MIT licensed</sub>
+</div>
