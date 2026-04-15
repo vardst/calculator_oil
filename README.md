@@ -1,62 +1,29 @@
-<div align="center">
+# Cost Per Mile
 
-# ⛽ Cost Per Mile
+A calculator I made because the last time I helped a friend price a haul, we did the math on a napkin three times and got three different answers.
 
-### Know exactly what every mile costs you.
+There are two modes. One is for road trips, the kind of thing you fiddle with before driving cross-country with your friends. The other is for owner-operators — the people who actually need to know, with some confidence, what a mile costs them before quoting a load.
 
-A beautiful, lightning-fast cost-per-mile calculator for road-trippers and owner-operators.
-Live results · dark mode · mobile-first · zero tracking.
+It runs entirely in the browser. Nothing gets sent anywhere. It remembers your last inputs, so when fuel prices move you don't start from scratch.
 
-<br />
+**[Open it →](https://vardst.github.io/calculator_oil/)**
 
-[![Live Demo](https://img.shields.io/badge/▶_Try_it_live-vardst.github.io%2Fcalculator__oil-fbbf24?style=for-the-badge&labelColor=0a0a0a)](https://vardst.github.io/calculator_oil/)
+## What's in it
 
-<br />
+Trip mode covers distance, MPG, fuel price, and the questions people actually have. Does the AC really cost you anything? (Yeah, about 10%.) Does the cooler full of beer in the back matter? (A bit, roughly 1% per 100 lbs.) Splitting fuel with passengers, round trips, EVs with kWh inputs — all there.
 
-[![Deploy](https://img.shields.io/github/actions/workflow/status/vardst/calculator_oil/deploy.yml?branch=main&label=deploy&style=flat-square&logo=githubactions&logoColor=white&color=34d399&labelColor=0a0a0a)](https://github.com/vardst/calculator_oil/actions/workflows/deploy.yml)
-[![GitHub Pages](https://img.shields.io/badge/hosted%20on-GitHub%20Pages-181717?style=flat-square&logo=github&logoColor=white)](https://vardst.github.io/calculator_oil/)
-[![Built with Vite](https://img.shields.io/badge/built%20with-Vite-646cff?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev)
-[![React](https://img.shields.io/badge/React-18-61dafb?style=flat-square&logo=react&logoColor=white)](https://react.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-[![Tailwind v4](https://img.shields.io/badge/Tailwind-v4-06b6d4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
-[![License: MIT](https://img.shields.io/badge/license-MIT-fbbf24?style=flat-square&labelColor=0a0a0a)](#license)
+Pro mode is the trucking version. Fixed monthly costs (truck, insurance, parking, the whole list), variable per-mile costs, driver pay, deadhead, profit target. Out comes your real break-even and the rate you should be quoting. Everything updates as you type, so you can drag a number around and watch what it does.
 
-</div>
+Metric or imperial. Dollars, euros, pounds. Dark by default, but there's a light mode if you really want it.
 
-<br />
+## How it's built
 
-<div align="center">
+Vite, React, TypeScript, Tailwind v4. A few Radix primitives where building from scratch wasn't worth it. Animations from `motion`. The whole thing is one static bundle deployed to GitHub Pages by a workflow on every push to `main`.
 
-## ✨
+## Where it came from
 
-| 🚗 **Trip mode** | 🚛 **Trucking pro** | ⚡ **Live** |
-|:---:|:---:|:---:|
-| Plan road trips,<br/>split with friends | Break-even &<br/>suggested rate per mile | Numbers update<br/>as you type |
+Started as a typical freelance brief: three inputs, one number out. Those calculators are fine until your situation is even a little specific, and then they're useless. The trick was adding enough inputs to make it genuinely useful without burying anyone under a wall of fields. I think it lands in the right place. Try it and tell me if it doesn't.
 
-| 🌙 **Dark by default** | 🌍 **Metric or imperial** | 💸 **$ · € · £** |
-|:---:|:---:|:---:|
-| Easy on the eyes,<br/>light mode included | One toggle,<br/>everything converts | Pick your<br/>currency |
+## License
 
-| 📱 **Mobile-first** | 🔒 **100% private** | 📋 **One-tap copy** |
-|:---:|:---:|:---:|
-| Designed for the<br/>phone in your pocket | All math runs locally,<br/>nothing leaves your device | Share results<br/>in a tap |
-
-</div>
-
-<br />
-
-<div align="center">
-
-### 👉 [**Open the calculator**](https://vardst.github.io/calculator_oil/) 👈
-
-<sub>Free forever · No signup · Works offline after first load</sub>
-
-</div>
-
-<br />
-
----
-
-<div align="center">
-<sub>Made with ⛽ and ☕ · MIT licensed</sub>
-</div>
+MIT.
